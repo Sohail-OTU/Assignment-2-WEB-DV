@@ -1,0 +1,402 @@
+@import "https://fonts.googleapis.com/css?family=Playfair+Display&display=swap";
+
+/*
+The color scheme I am using are these five colours:
+#ffffff, #6A8DA7, #022B44, #2F3F4F, #1E3A52
+*/
+
+/*GENERAL CSS + HOMEPAGE*/
+
+._body {
+    background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #6A8DA7 60%, #022B44 100%), 
+            linear-gradient(135deg, #2F3F4F 0%, #1E3A52 100%), 
+            linear-gradient(45deg, #022B44 0%, #2F3F4F 100%);
+    background-blend-mode: overlay;
+    position: relative;
+    overflow-x: hidden;
+}
+
+._body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; 
+    background-color: #5C7C89; 
+  }
+  
+  ._body::-webkit-scrollbar-thumb {
+    background-color: #1F4959; 
+    border-radius: 10px; 
+  }
+  
+  ._body::-webkit-scrollbar-thumb:hover {
+    background-color: #618796; 
+  }
+  
+  ._body::-webkit-scrollbar-track {
+    background-color: #242424; 
+    border-radius: 10px; 
+  }
+
+header {
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.364);
+    padding: 4%;
+    border-radius: 30px;
+}
+
+.left_logo {
+    float: left;
+    position: relative;
+    filter: brightness(1);
+    margin: -2.5%;
+}
+
+.left_logo img {
+    border-radius: 15px;
+    display: block;
+}
+
+.right_side {
+    position: relative;
+    float:right;
+    margin-top: -2.5%;
+    margin-bottom: -2.8%;
+    margin-right: -3%;
+    width: 30%;
+    height: 30%;
+    padding: 1%;
+}
+
+ul {
+    list-style-type: none;
+    background-color:#5c7c895c;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 0%;
+    text-align: center;
+    text-wrap: balance;
+
+}
+
+li {
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    margin-left: 3%
+}
+
+li a {
+    text-decoration: none;
+    color: #bbccff;
+    margin: 2%;
+}
+
+li a:hover {
+    background: #ffffff4b;
+    padding: 15%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#left_homepage_background {
+    background-color: rgba(0, 0, 0, 0.364);
+    border-radius: 20px;
+    padding: 10%;
+    height: auto;
+    width: 20%;
+    position: relative;
+    margin-top: 4%;
+    left: 15%;
+}
+
+#left_homepage_content {
+    color:#ffffffd9;
+    margin: -25%;
+}
+
+#right_homepage_background {
+    position: relative;
+    padding: 1%;
+}
+
+#right_homepage_content img {
+    float:right;
+    position: relative;
+    border-style: groove;
+    border-color: black;
+    border-radius: 100px;
+    filter: brightness(0.8);
+    margin-top: -27%;
+    margin-right: 15%;
+}
+
+footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.364);
+    margin-top: 12%;
+    display:flex;
+    justify-content: space-between;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: -1%;
+    border-radius: 30px;
+}
+
+#left_side_footer, #middle_side_footer, #right_side_footer {
+    position: relative;
+    float:left;
+    flex-basis: 30%; 
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#middle_side_footer {
+    text-align: center;
+}
+
+#left_side_footer a, #middle_side_footer a {
+    text-decoration:underline;
+    color: #FFFFFFc2;
+}
+
+#right_side_footer h3 {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*This marks the end of the code for the homepage*/
+/*ABOUT ME PAGE*/
+
+#about_content_background {
+    background-color: rgba(0, 0, 0, 0.364);
+    border-radius: 20px;
+    padding-bottom: 4%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about_content_left img {
+    object-fit:cover;
+    float:left;
+    position: relative;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 5%;
+    filter: brightness(0.8);
+}
+
+#about_content_right {
+    float: right;
+    position: relative;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-left: 1%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+#about_content_right p {
+    font-size: 100%;
+}
+
+#about_content_video_box {
+    position: relative;
+    background: rgba(0, 0, 0, 0.347);
+    padding: 5%;
+    width: 60%;
+    left: 15%;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
+#about_content_video {
+    margin-right: 4%;
+}
+
+#about_content_video video {
+    border-radius: 20px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*This marks the end of the code for the About Me Page*/
+
+
+
+/*PROJECTS PAGE*/
+
+.projects_content_container {
+    background-color:rgba(0, 0, 0, 0.347);
+    padding: 5%;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -3%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.projects_content_container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #5C7C89;
+  }
+  
+  .projects_content_container::-webkit-scrollbar-thumb {
+    background-color: #1F4959;
+    border-radius: 10px;
+  }
+  
+  .projects_content_container::-webkit-scrollbar-thumb:hover {
+    background-color: #618796;
+  }
+  
+  .projects_content_container::-webkit-scrollbar-track {
+    background-color: #242424;
+    border-radius: 10px;
+  }
+
+.projects__ {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    padding-inline-end: 10%;
+    flex: none;
+    max-width: 50%;
+}
+
+.projects__ img {
+    border-radius: 10px;
+    margin-bottom: 8%;
+    vertical-align: top;
+}
+
+.projects__ a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.projects__ hr {
+    width: 100%;
+    margin-top: 2%;
+
+}
+
+.projects__ h3 {
+    color: #ffffff;
+}
+
+.projects__ p {
+    font-size: 90%;
+    color: #ffffffcc;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*This marks the end of the code for the Projects Page*/
+
+
+
+/*CONTACT ME PAGE*/
+#contact_form_background {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 10%;
+    padding-bottom: 30%;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: -4%;
+}
+
+#contact_form {
+    background-color: #ffffff83;
+    padding: 10%;
+    border-radius: 20px;
+    margin-bottom: -60%;
+    margin-top: -10%;
+    margin-right: -8%;
+    margin-left: -8%;
+    border: 1px solid black;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+}
+
+form h2 {
+    margin-top: -5%;
+}
+
+form input {
+    margin-bottom: 5%;
+}
+
+#submit_ {
+    margin-top: 10%;
+    padding-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 120%;
+
+}
+
+input {
+    background-color:#556172;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFFFFFd3;
+    padding-top: 1%;
+    border: 1px solid black;
+}
+
+textarea {
+    background-color:#556172;
+    border-radius: 10px;
+    padding-bottom: 30%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffffd3;
+    border: 1px solid black;
+}
+
+textarea::placeholder {
+    color:#bacbd676;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input::placeholder {
+    color:#bacbd676;
+    font-style: italic;
+}
+
+input:focus, textarea:focus {
+    outline:none;
+    box-shadow: none;
+}
+
+input, textarea {
+    text-indent: 1%;
+    color: rgb(18, 31, 42);
+    font-size: 100%;
+}
+
+label {
+    color: rgb(24, 37, 49);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
