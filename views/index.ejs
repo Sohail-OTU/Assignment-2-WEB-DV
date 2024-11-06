@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <!--No need to write href='/public/Content/app.css'
+    because the /public has been mentioned in app.js(server side one)
+    -->
+  <!--CSS Files-->
+  <link rel="stylesheet" href="/Content/Content/app.css" />
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css//all.min.css" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">INFR3120</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">
+            <i class="fa-solid fa-house"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about">
+            <i class="fa-regular fa-address-card"></i> About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/services">
+            <i class="fa-solid fa-hand-holding-heart"></i> Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/products">
+            <i class="fa-solid fa-box-open"></i> Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact">
+            <i class="fa-solid fa-message"></i> Contact Us</a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+  <h1>Welcome to the <%= title %> page.</h1>
+  <!--Script Files-->
+  <script src="/Scripts/Scripts/app.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</body>
+
+</html>
