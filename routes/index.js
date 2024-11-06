@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+// Define routes for each page
 router.get('/', (req, res) => res.render('index', { title: 'Home' }));
 router.get('/about', (req, res) => res.render('about', { title: 'About Me' }));
 router.get('/projects', (req, res) => res.render('projects', { title: 'Projects' }));
