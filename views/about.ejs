@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> SB - About Me</title>
+        <meta charset = "UTF-8"/>
+        <link rel = "stylesheet" href = "/stylesheet/style.css"/>
+        <link rel="icon" href="Title_icon.png" type="image/x-icon"/>
+    </head>
+    <body class = "_body">
+        <%- include('partials/header') %>
+        <div id = "about_content_background">
+            <div id = "about_content_left">
+                <img src = "/images/Bitmoji.png" alt = "Sohail Baig Image" height = "70%" width = "70%" />
+            </div>
+            <div id = "about_content_right">
+                <h2 style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+                    About Me <hr> 
+                </h2>
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #ffffffd9">
+                    Once again, nice to meet you!<br> My name is Sohail Baig, as you might have seen around here already.<br>
+                    Based in Oshawa, ON, in Canada, I am currently in my second year of study at Ontario Tech University.<br><br> The program in which I am enrolled in
+                    is Networking and IT Security. Through this program, I have learned valuable lessons about hard work and gained extensive knowledge
+                        on various topics such as programming, networking, mathematics, and business. All of which are valuable in a work environment.<br><br> As for my experience,
+                        I've had the opportunity to work with places such as premier parks as a lifeguard, and community centers like the Islamic Propagation Centre of Ontario as a camp counselor for 
+                        two consecutive years. To top it all, the past two years I have been strengthening my knowledge and helping others through peer tutoring.<br>
+                        I am a very motivated and hardworking student ready to take on anything.<br><br>
+                        Watch the video below to learn more about who I really am!
+
+                </p>
+            </div>
+        </div>
+        <div id = "about_content_video_box">
+            <div id = "about_content_video">
+                <video width="105%" poster = "Placeholder_poster.jpg" controls>
+                    <source src = "AboutMeVideo.mp4" type = "video/mp4">
+                    <source src = "AboutMeVideo.ogg" type = "video/ogg">
+                </video>
+            </div>
+        </div>
+        <%- include('partials/footer') %>
+    </body>
+</html>

@@ -10,21 +10,7 @@
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     </head>
     <body class = "_body">
-        <header>
-            <div class="left_logo">
-                <img src="/images/SohailLogo.png" alt="SohailBaigLogo" width="26%" height="auto">
-            </div>
-            <div class="right_side">
-                <nav class="navBar">
-                    <ul style="font-size: 110%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        <li><a href="index.html">   Home  </a></li>
-                        <li><a href="AboutMe.html">   About  </a></li>
-                        <li><a href="Projects.html">   Projects  </a></li>
-                        <li><a href="Contact.html">   Contact  </a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <%- include('partials/header') %>
         <div>
             <div id = left_homepage_background>
                 <div id = "left_homepage_content">
@@ -43,37 +29,6 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div id = "left_side_footer">
-                <h3 style = "text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                    Contact Info <hr>
-                </h3>
-                <p style = "font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-                    <b>Email:</b>&emsp;sohail.baig@ontariotechu.ca<br><b>Phone:</b>&emsp;647-xxx-xxxx
-                    <br><br><b>Institution:</b>&emsp;Ontario Tech University<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i><a href="https://www.google.com/maps/place/2000+Simcoe+St+N,+Oshawa,+ON+L1G+0C5/@43.9450912,-78.8973788,17z/data=!3m1!4b1!4m6!3m5!1s0x89d51b9a81c6966d:0x6a0a644e41d65520!8m2!3d43.9450912!4d-78.8948039!16s%2Fg%2F11nnqstrb9?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">2000 Simcoe Street North</a></i><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i><a href="https://www.google.com/maps/place/2000+Simcoe+St+N,+Oshawa,+ON+L1G+0C5/@43.9450912,-78.8973788,17z/data=!3m1!4b1!4m6!3m5!1s0x89d51b9a81c6966d:0x6a0a644e41d65520!8m2!3d43.9450912!4d-78.8948039!16s%2Fg%2F11nnqstrb9?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">Oshawa, Ontario L1G 0C5</a></i>
-                    <br><br><br> &ensp; <i>&copy; Copyright 2024 Sohail Baig</i>
-                </p>
-            </div>
-            <div id = "middle_side_footer">
-                <h3 style = "text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                    Links <hr>
-                </h3>
-                <p style = "font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-                    <a href="/index.html">Home</a> &emsp; &emsp; &emsp;
-                    <a href="AboutMe.html">About Me</a><br><br>
-                    <a href="Projects.html">Projects</a> &emsp; &emsp; &emsp;
-                    <a href="Contact.html">Contact</a>
-                </p>
-            </div>
-            <div id = "right_side_footer">
-                <h3 style = "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                    Social <hr>
-                </h3>
-                <p style = "font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                    <a href="https://www.linkedin.com/in/sohail-baig-r23/"><img src="/images/LinkedinLogo.png" alt="LinkedinLogo" width="10%" height="auto"/></a> &ensp;
-                    <a href="https://github.com/Sohail-OTU/Assignment_1"><img src = "/images/Github logo.png" alt="Github Logo" width="10%" height="auto"/></a>
-                </p>
-            </div>
-        </footer>
+        <%- include('partials/footer') %>
     </body>
+</html>
